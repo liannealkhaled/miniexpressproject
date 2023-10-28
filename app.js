@@ -6,9 +6,8 @@ const connectDB = require("./database");
 const booksrouter = require("./api/Books/routes");
 
 app.use(express.json());
-
-app.use("/api", booksrouter);
 app.use(cors());
+app.use("/api", booksrouter);
 
 connectDB();
 app.listen(process.env.PORT, () => {
