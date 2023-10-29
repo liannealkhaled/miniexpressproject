@@ -10,6 +10,7 @@ app.use(cors());
 app.use("/api", booksrouter);
 
 connectDB();
+
 app.listen(process.env.PORT, () => {
   console.log("The application is running on localhost:8000");
 });
