@@ -27,6 +27,7 @@ const CreateBook = async (req, res) => {
 };
 
 // update a book by PUT
+///////
 const UpdatedBookbyId = async (req, res) => {
   const { id } = req.params;
   const updatedBook = await Book.findByIdAndUpdate(id, req.body, {

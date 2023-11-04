@@ -11,7 +11,7 @@ const booksrouter = express.Router();
 
 booksrouter.get("/books", GetAllBooks);
 
-booksrouter.post("/books", CreateBook); // ('/' , function from router )
+booksrouter.post("/book", CreateBook); // ('/' , function from router )
 
 booksrouter.get("/books/:id", GetOneBookbyId);
 
